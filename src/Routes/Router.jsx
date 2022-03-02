@@ -10,7 +10,7 @@ export default function Router(){
          <Routes>
              <Route path='/' element={<HomePage />}/>
              <Route path='/Wizards/:house' element={<WizardsOfHouse />} />
-             <Route path='/Wizards/Detail/:id' element={<DetailsWizard />} />
+             <Route path='/Wizards/Detail/:name/:house' element={<DetailsWizard />} />
              <Route path='*' element={<ErrorPage />} />
          </Routes>
         </BrowserRouter>
