@@ -14,6 +14,16 @@ export const FirstDivHome = styled.div`
       width: 30%;
       margin-bottom: 5%;
   }
+
+  @media (max-width: 600px) {
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .titleHome{
+      width: 80%;
+    }
+  }
 `;
 
 export const DivImg = styled.div`
@@ -21,6 +31,11 @@ export const DivImg = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+
+  @media (max-width: 600px){
+    display: flex;
+    flex-direction: column;
+  }
         
 `
 
@@ -43,5 +58,10 @@ export const ImgTitle = styled.div`
         transform: scale(1.1);
         transition: 0.5s;
     }
+}
+
+@media (max-width: 600px){
+  width: 50%;
+  margin: 5% 0;
 }
 `

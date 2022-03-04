@@ -2,6 +2,6 @@
 
 export default function ErrorPage(){
     return(
-        <h1>Error</h1>
+        <h1>Pagina Não Encontrada</h1>
     )
 }

@@ -4,15 +4,18 @@ import { useEffect, useState } from "react";
 import { URLBase } from "../../URLBase";
 import { GridOfCards, DivFather } from "./Styled";
 import noImage from "../../img/noimage.jpg";
+import LoadingRony from '../../img/loadingRon.gif'
 
 export default function WizardsOfHouse() {
   const param = useParams();
   const navigate = useNavigate();
 
   const [wizards, setWizards] = useState([]);
+  const [loading , setLoading] = useState(true);
 
   useEffect(() => {
     requestWizardsOfHouse();
+    setLoading(true);
   }, []);
 
   const requestWizardsOfHouse = () => {
@@ -20,6 +23,7 @@ export default function WizardsOfHouse() {
       .get(`${URLBase}/house/${param.house}`)
       .then((res) => {
         setWizards(res.data);
+        setLoading(false)
       })
       .catch((err) => {
         console.log(err);
@@ -31,28 +35,28 @@ export default function WizardsOfHouse() {
       return (
         <DivFather color={"#0000FF"} color2={"#C0C0C0"} color3={"black"}>
           <button type="button" className="btn btn-dark" onClick={() => navigate('/')}>Voltar</button>
-          <GridOfCards>{renderWizards}</GridOfCards>
+          <GridOfCards>{loading ? <img src={LoadingRony} /> : renderWizards}</GridOfCards>
         </DivFather>
       );
     } else if (param.house === "hufflepuff") {
       return (
         <DivFather color={"#FFFF00"} color2={"#4F4F4F"} color3={"black"}>
           <button type="button" className="btn btn-dark" onClick={() => navigate('/')}>Voltar</button>
-          <GridOfCards>{renderWizards}</GridOfCards>
+          <GridOfCards>{loading ? <img src={LoadingRony} /> : renderWizards}</GridOfCards>
         </DivFather>
       );
     } else if (param.house === "slytherin") {
       return (
         <DivFather color={"#006400"} color2={"#C0C0C0"} color3={"black"}>
           <button type="button" className="btn btn-dark" onClick={() => navigate('/')}>Voltar</button>
-          <GridOfCards>{renderWizards}</GridOfCards>
+          <GridOfCards>{loading ? <img src={LoadingRony} /> : renderWizards}</GridOfCards>
         </DivFather>
       );
     } else {
       return (
         <DivFather color={"#DAA520"} color2={"red"} color3={"black"}>
           <button type="button" className="btn btn-dark" onClick={() => navigate('/')}>Voltar</button>
-          <GridOfCards>{renderWizards}</GridOfCards>
+          <GridOfCards>{loading ? <img src={LoadingRony} /> : renderWizards}</GridOfCards>
         </DivFather>
       );
     }
@@ -60,7 +64,7 @@ export default function WizardsOfHouse() {
 
   const renderWizards = wizards.map((item) => {
     return (
-      <div className="card">
+      <div className="card" key={crypto.randomUUID()}>
         <img
           className="card-img-top"
           src={item.image === "" ? noImage : item.image}

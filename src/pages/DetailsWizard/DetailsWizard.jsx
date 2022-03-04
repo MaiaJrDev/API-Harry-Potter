@@ -39,7 +39,7 @@ export default function DetailsWizard() {
       })
       .map((item) => {
         return (
-          <div className="card" style={{ width: "20em" }} key={item.name}>
+          <div className="card" style={{ width: "20em" }} key={crypto.randomUUID()}>
             <img
               src={item.image === "" ? noImage : item.image}
               className="card-img-top"
@@ -49,25 +49,25 @@ export default function DetailsWizard() {
               <h5 className="card-title">{item.name}</h5>
             </div>
             <ul className="list-group list-group-flush">
-              <li className="list-group-item">Casa : {item.house}</li>
+              <li className="list-group-item"><b>Casa :</b> {item.house}</li>
               <li className="list-group-item">
-                Vivo(a) : {item.alive ? "Sim" : "Não"}
+                <b>Vivo(a) :</b> {item.alive ? "Sim" : "Não"}
               </li>
               <li className="list-group-item">
-                Gênero : {item.gender === "female" ? "Feminino" : "Masculino"}
+                <b>Gênero : </b> {item.gender === "female" ? "Feminino" : "Masculino"}
               </li>
               <li className="list-group-item">
-                Aniversário : {item.dateOfBirth}
+                <b>Aniversário :</b> {item.dateOfBirth ? item.dateOfBirth : 'Não Cadastrado'}
               </li>
               <li className="list-group-item">
-                Cor Dos Olhos : {item.eyeColour}
+                <b>Cor Dos Olhos :</b> {item.eyeColour ? item.eyeColour : 'Não Cadastrado'}
               </li>
-              <li className="list-group-item">Patrono : {item.patronus}</li>
+              <li className="list-group-item"><b>Patrono :</b> {item.patronus ? item.patronus : 'Não Cadastrado'}</li>
               <li className="list-group-item">
-                Funcionário De Hogwarts : {item.hogwartsStaff ? "Sim" : "Não"}
+                <b>Funcionário De Hogwarts :</b> {item.hogwartsStaff ? "Sim" : "Não"}
               </li>
               <li className="list-group-item">
-                Estudante de Hogwarts : {item.hogwartsStudent ? "Sim" : "Não"}
+                <b>Estudante de Hogwarts :</b> {item.hogwartsStudent ? "Sim" : "Não"}
               </li>
             </ul>
             <div className="card-body">

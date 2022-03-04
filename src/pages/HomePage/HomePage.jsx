@@ -25,7 +25,7 @@ export default function HomePage(){
     useEffect(()=>{
       setTimeout(()=>{
         setGif(false)
-      },2000)
+      },1000)
     },[])
 
 
