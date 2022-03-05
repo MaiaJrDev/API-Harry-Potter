@@ -2,7 +2,7 @@
 
 ## Feito em ReactJS, Styled-Components, Bootstrap e Axios para as requisições 
 
-### Link Para Visualizar o Projeto : ...
+### Link Para Visualizar o Projeto : https://maiajrdev.github.io/API-Harry-Potter/
 
 ## Preview:
 
