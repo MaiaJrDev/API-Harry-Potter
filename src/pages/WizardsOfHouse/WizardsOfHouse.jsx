@@ -2,7 +2,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { URLBase } from "../../URLBase";
-import { GridOfCards, DivFather } from "./Styled";
+import { GridOfCards, DivFather, DivSearch} from "./Styled";
 import noImage from "../../img/noimage.jpg";
 import LoadingRony from '../../img/loadingRon.gif'
 
@@ -12,6 +12,7 @@ export default function WizardsOfHouse() {
 
   const [wizards, setWizards] = useState([]);
   const [loading , setLoading] = useState(true);
+  const [inputValue, setInput] = useState('');
 
   useEffect(() => {
     requestWizardsOfHouse();
@@ -34,35 +35,49 @@ export default function WizardsOfHouse() {
     if (param.house === "ravenclaw") {
       return (
         <DivFather color={"#0000FF"} color2={"#C0C0C0"} color3={"black"}>
+          <DivSearch>
           <button type="button" className="btn btn-dark" onClick={() => navigate('/')}>Voltar</button>
+          <input type="text" className="form-control" placeholder="Busca Por Nome" onChange={e => setInput(e.target.value)}/>
+          </DivSearch>
           <GridOfCards>{loading ? <img src={LoadingRony} /> : renderWizards}</GridOfCards>
         </DivFather>
       );
     } else if (param.house === "hufflepuff") {
       return (
         <DivFather color={"#FFFF00"} color2={"#4F4F4F"} color3={"black"}>
+           <DivSearch>
           <button type="button" className="btn btn-dark" onClick={() => navigate('/')}>Voltar</button>
+          <input type="text" className="form-control" placeholder="Busca Por Nome" onChange={e => setInput(e.target.value)}/>
+          </DivSearch>
           <GridOfCards>{loading ? <img src={LoadingRony} /> : renderWizards}</GridOfCards>
         </DivFather>
       );
     } else if (param.house === "slytherin") {
       return (
         <DivFather color={"#006400"} color2={"#C0C0C0"} color3={"black"}>
+           <DivSearch>
           <button type="button" className="btn btn-dark" onClick={() => navigate('/')}>Voltar</button>
+          <input type="text" className="form-control" placeholder="Busca Por Nome" onChange={e => setInput(e.target.value)}/>
+          </DivSearch>
           <GridOfCards>{loading ? <img src={LoadingRony} /> : renderWizards}</GridOfCards>
         </DivFather>
       );
     } else {
       return (
         <DivFather color={"#DAA520"} color2={"red"} color3={"black"}>
+           <DivSearch>
           <button type="button" className="btn btn-dark" onClick={() => navigate('/')}>Voltar</button>
+          <input type="text" className="form-control" placeholder="Busca Por Nome" onChange={e => setInput(e.target.value)}/>
+          </DivSearch>
           <GridOfCards>{loading ? <img src={LoadingRony} /> : renderWizards}</GridOfCards>
         </DivFather>
       );
     }
   };
 
-  const renderWizards = wizards.map((item) => {
+  const renderWizards = wizards.filter((item) => {
+    return item.name.toLowerCase().includes(inputValue.toLowerCase());
+  }).map((item) => {
     return (
       <div className="card" key={crypto.randomUUID()}>
         <img
