@@ -36,7 +36,7 @@ export default function WizardsOfHouse() {
       return (
         <DivFather color={"#0000FF"} color2={"#C0C0C0"} color3={"black"}>
           <DivSearch>
-          <button type="button" className="btn btn-dark" onClick={() => navigate('/')}>Voltar</button>
+          <button type="button" className="btn btn-dark" onClick={() => navigate('/API-Harry-Potter')}>Voltar</button>
           <input type="text" className="form-control" placeholder="Busca Por Nome" onChange={e => setInput(e.target.value)}/>
           </DivSearch>
           <GridOfCards>{loading ? <img src={LoadingRony} /> : renderWizards}</GridOfCards>
@@ -46,7 +46,7 @@ export default function WizardsOfHouse() {
       return (
         <DivFather color={"#FFFF00"} color2={"#4F4F4F"} color3={"black"}>
            <DivSearch>
-          <button type="button" className="btn btn-dark" onClick={() => navigate('/')}>Voltar</button>
+          <button type="button" className="btn btn-dark" onClick={() => navigate('/API-Harry-Potter')}>Voltar</button>
           <input type="text" className="form-control" placeholder="Busca Por Nome" onChange={e => setInput(e.target.value)}/>
           </DivSearch>
           <GridOfCards>{loading ? <img src={LoadingRony} /> : renderWizards}</GridOfCards>
@@ -56,7 +56,7 @@ export default function WizardsOfHouse() {
       return (
         <DivFather color={"#006400"} color2={"#C0C0C0"} color3={"black"}>
            <DivSearch>
-          <button type="button" className="btn btn-dark" onClick={() => navigate('/')}>Voltar</button>
+          <button type="button" className="btn btn-dark" onClick={() => navigate('/API-Harry-Potter')}>Voltar</button>
           <input type="text" className="form-control" placeholder="Busca Por Nome" onChange={e => setInput(e.target.value)}/>
           </DivSearch>
           <GridOfCards>{loading ? <img src={LoadingRony} /> : renderWizards}</GridOfCards>
@@ -66,7 +66,7 @@ export default function WizardsOfHouse() {
       return (
         <DivFather color={"#DAA520"} color2={"red"} color3={"black"}>
            <DivSearch>
-          <button type="button" className="btn btn-dark" onClick={() => navigate('/')}>Voltar</button>
+          <button type="button" className="btn btn-dark" onClick={() => navigate('/API-Harry-Potter')}>Voltar</button>
           <input type="text" className="form-control" placeholder="Busca Por Nome" onChange={e => setInput(e.target.value)}/>
           </DivSearch>
           <GridOfCards>{loading ? <img src={LoadingRony} /> : renderWizards}</GridOfCards>
@@ -91,7 +91,7 @@ export default function WizardsOfHouse() {
           <a
             className="btn btn-primary"
             onClick={() =>
-              navigate(`/Wizards/Detail/${item.name}/${param.house}`)
+              navigate(`/API-Harry-Potter/Wizards/Detail/${item.name}/${param.house}`)
             }
           >
             Mais Detalhes

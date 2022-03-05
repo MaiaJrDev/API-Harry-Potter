@@ -32,7 +32,7 @@ export default function HomePage(){
     const SelectHouse = (house, audio) => {
         
         new Audio(audio).play();
-        navigate(`/Wizards/${house}`);
+        navigate(`/API-Harry-Potter/Wizards/${house}`);
 
     }
 

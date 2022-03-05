@@ -8,9 +8,9 @@ export default function Router(){
     return(
         <BrowserRouter>
          <Routes>
-             <Route path='/' element={<HomePage />}/>
-             <Route path='/Wizards/:house' element={<WizardsOfHouse />} />
-             <Route path='/Wizards/Detail/:name/:house' element={<DetailsWizard />} />
+             <Route path='/API-Harry-Potter' element={<HomePage />}/>
+             <Route path='/API-Harry-Potter/Wizards/:house' element={<WizardsOfHouse />} />
+             <Route path='/API-Harry-Potter/Wizards/Detail/:name/:house' element={<DetailsWizard />} />
              <Route path='*' element={<ErrorPage />} />
          </Routes>
         </BrowserRouter>
