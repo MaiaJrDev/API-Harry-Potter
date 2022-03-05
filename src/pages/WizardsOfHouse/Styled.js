@@ -15,10 +15,8 @@ export const GridOfCards = styled.div`
 
   .card {
     width: 100%;
-    margin: 0 auto;
-    box-shadow: 1px 1px 5px gray;
 
-    background: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.30);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(13.5px);
     -webkit-backdrop-filter: blur(13.5px);
@@ -73,5 +71,14 @@ export const DivSearch = styled.div`
 
    .form-control{
       width: 20%;
+   }
+
+   @media (max-width: 600px){
+     flex-direction: column;
+
+     .form-control{
+      width: 80%;
+      margin-bottom: 5%;
+   }
    }
 `
