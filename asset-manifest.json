@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/API-Harry-Potter/static/css/main.1a8a0596.css",
-    "main.js": "/API-Harry-Potter/static/js/main.b1e84ba6.js",
+    "main.js": "/API-Harry-Potter/static/js/main.9338bec8.js",
     "static/media/backGrifinoria.jpg": "/API-Harry-Potter/static/media/backGrifinoria.f86fa9960a8dfaf12b8e.jpg",
     "static/media/sonserina.png": "/API-Harry-Potter/static/media/sonserina.120117a36820c04c302a.png",
     "static/media/backSonserina.jpg": "/API-Harry-Potter/static/media/backSonserina.1e8d3a49e002d898d034.jpg",
@@ -20,10 +20,10 @@
     "static/media/slytherin.mp3": "/API-Harry-Potter/static/media/slytherin.a35d83a9f4bd16cadd82.mp3",
     "index.html": "/API-Harry-Potter/index.html",
     "main.1a8a0596.css.map": "/API-Harry-Potter/static/css/main.1a8a0596.css.map",
-    "main.b1e84ba6.js.map": "/API-Harry-Potter/static/js/main.b1e84ba6.js.map"
+    "main.9338bec8.js.map": "/API-Harry-Potter/static/js/main.9338bec8.js.map"
   },
   "entrypoints": [
     "static/css/main.1a8a0596.css",
-    "static/js/main.b1e84ba6.js"
+    "static/js/main.9338bec8.js"
   ]
 }
