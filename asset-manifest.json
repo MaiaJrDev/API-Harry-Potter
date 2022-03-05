@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/API-Harry-Potter/static/css/main.1a8a0596.css",
+    "main.js": "/API-Harry-Potter/static/js/main.b1e84ba6.js",
+    "static/media/backGrifinoria.jpg": "/API-Harry-Potter/static/media/backGrifinoria.f86fa9960a8dfaf12b8e.jpg",
+    "static/media/sonserina.png": "/API-Harry-Potter/static/media/sonserina.120117a36820c04c302a.png",
+    "static/media/backSonserina.jpg": "/API-Harry-Potter/static/media/backSonserina.1e8d3a49e002d898d034.jpg",
+    "static/media/backHome.jpg": "/API-Harry-Potter/static/media/backHome.6dfa703c25fd8c6a41d3.jpg",
+    "static/media/backRavenclaw.jpg": "/API-Harry-Potter/static/media/backRavenclaw.9539b9b1a3d44d4ef91f.jpg",
+    "static/media/backLufalufa.jpg": "/API-Harry-Potter/static/media/backLufalufa.96464e055b2845f895b1.jpg",
+    "static/media/selecthouse.png": "/API-Harry-Potter/static/media/selecthouse.6fcc79aa838394f27a89.png",
+    "static/media/grifinoria.png": "/API-Harry-Potter/static/media/grifinoria.9c578bbbe5338992690c.png",
+    "static/media/lufalufa.png": "/API-Harry-Potter/static/media/lufalufa.4b516a567ef4528bdecb.png",
+    "static/media/corvinal.png": "/API-Harry-Potter/static/media/corvinal.6a66d8917ebf8459507d.png",
+    "static/media/loadingRon.gif": "/API-Harry-Potter/static/media/loadingRon.e941d19d3de823b8b645.gif",
+    "static/media/loadingHome.gif": "/API-Harry-Potter/static/media/loadingHome.9236ae96e92ac9b97292.gif",
+    "static/media/ravenclaw.mp3": "/API-Harry-Potter/static/media/ravenclaw.4b6eeb9f8843b43112a7.mp3",
+    "static/media/hufflepuff.mp3": "/API-Harry-Potter/static/media/hufflepuff.ad768b4bb89d36a84c79.mp3",
+    "static/media/gryffindor.mp3": "/API-Harry-Potter/static/media/gryffindor.1f283150d469882dc6e6.mp3",
+    "static/media/slytherin.mp3": "/API-Harry-Potter/static/media/slytherin.a35d83a9f4bd16cadd82.mp3",
+    "index.html": "/API-Harry-Potter/index.html",
+    "main.1a8a0596.css.map": "/API-Harry-Potter/static/css/main.1a8a0596.css.map",
+    "main.b1e84ba6.js.map": "/API-Harry-Potter/static/js/main.b1e84ba6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a8a0596.css",
+    "static/js/main.b1e84ba6.js"
+  ]
+}
