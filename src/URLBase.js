@@ -1,3 +1,3 @@
 
 
-export const URLBase = 'http://hp-api.herokuapp.com/api/characters';
+export const URLBase = 'https://hp-api.onrender.com/api/characters';
